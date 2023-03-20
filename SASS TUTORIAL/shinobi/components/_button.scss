@@ -1,0 +1,36 @@
+// max ins
+
+@mixin btn($bg-color: pink) {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: $base-padding $base-padding * 2;
+  border-radius: $base-border-radius;
+  background-color: $bg-color;
+}
+.btn {
+  @include btn;
+}
+
+@each $key, $val in $colors {
+  .btn-#{$key} {
+    @include btn($val);
+    &:hover {
+      background-color: lighten($val, 30%);
+    }
+  }
+  .btn-outlined-#{$key} {
+    @include btn(white);
+    border: $base-border-thickness solid $val;
+    &:hover {
+      background-color: $val;
+    }
+  }
+
+  //learn function
+  //   .btn-complement-#{$key} {
+  //     @include btn($val);
+  //     color: light-comp($val);
+  //   }
+}

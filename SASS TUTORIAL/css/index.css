@@ -1,0 +1,226 @@
+* {
+  color: inherit;
+  margin: 0;
+}
+
+body {
+  font-family: verdana;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 0) {
+  .reponsive-test {
+    color: red;
+  }
+}
+@media (min-width: 480px) {
+  .reponsive-test {
+    color: indigo;
+  }
+}
+@media (min-width: 720px) {
+  .reponsive-test {
+    color: cadetblue;
+  }
+}
+@media (min-width: 960px) {
+  .reponsive-test {
+    color: yellow;
+  }
+}
+@media (min-width: 1200px) {
+  .reponsive-test {
+    color: purple;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.gap-2 > * {
+  padding: 10px;
+}
+
+.gap-2 {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+@media (min-width: 0) {
+  .col-12-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 480px) {
+  .col-5-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.6666666667%;
+  }
+}
+@media (min-width: 1200px) {
+  .col-3-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+}
+.text-primary {
+  color: indigo;
+}
+
+.bg-primary {
+  background-color: indigo;
+}
+
+.bg-primary-light-3 {
+  background-color: #814da8;
+}
+
+.bg-primary-light-5 {
+  background-color: #a580c1;
+}
+
+.bg-primary-dark-5 {
+  background-color: #260041;
+}
+
+.bg-primary-dark-6 {
+  background-color: #1e0034;
+}
+
+.text-secondary {
+  color: green;
+}
+
+.bg-secondary {
+  background-color: green;
+}
+
+.text-info {
+  color: yellow;
+}
+
+.text-blood {
+  color: red;
+}
+
+.bg-blood {
+  background-color: red;
+}
+
+.bg-blood-dark-2 {
+  background-color: #cc0000;
+}
+
+.text-hover-orange-light-3:hover {
+  color: #ffc04d;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.bg-gray {
+  background-color: gray;
+}
+
+.text-purple {
+  color: purple;
+}
+
+.text-hover-purple:hover {
+  color: purple;
+}
+
+.bg-purple {
+  background-color: purple;
+}
+
+.text-white {
+  color: white;
+}
+
+.card {
+  display: block;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.card .card-title {
+  font-size: 1rem;
+  padding-bottom: 0.75rem;
+  font-weight: bold;
+}
+.card .card-body {
+  font-size: 0.75rem;
+}
+.card .card-body a {
+  text-decoration: underline;
+}
+
+.btn-blood {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  background-color: red;
+}
+.btn-blood:hover {
+  background-color: #ff9999;
+}
+
+.btn-outlined-blood {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  background-color: white;
+  border: 1px solid red;
+}
+.btn-outlined-blood:hover {
+  background-color: red;
+}
+
+.navbar .container, .navbar-primary .container, .navbar, .navbar-primary {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.navbar, .navbar-primary {
+  padding: 0.75rem, 1.5rem;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar .site-title, .navbar-primary .site-title {
+  font-size: 1.5rem;
+}
+.navbar-primary {
+  background-color: indigo;
+}

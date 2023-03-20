@@ -1,0 +1,57 @@
+// variables for shinobi
+
+//THEME COLOR
+
+// add !default to values to be changed later
+$primary: #32d !default;
+$secondary: green !default;
+$error: red !default;
+$info: yellow !default;
+
+// spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+//borders
+$base-border-thickness: 1px;
+$base-border-radius: 20px;
+
+//box-shadow
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+
+//font-sizes
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;
+
+//  MAPPING IN SCSS
+
+//color-pallete-map
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "error": $error,
+  "info": $info,
+  "blood": red,
+  "orange": orange,
+  "gray": gray,
+  "purple": purple,
+  "white": white,
+);
+
+.test-btn {
+  background-color: map-get($colors, "blood");
+}
+
+// math methods
+@debug map-get($colors, "purple");
+@debug map-has-key($colors, secon); //used to check if variable exist
+@debug map-remove($colors, primary);
+@debug map-merge(
+  $colors,
+  (
+    "pink": #ffc0cb,
+  )
+);
